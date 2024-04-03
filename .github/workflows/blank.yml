@@ -30,11 +30,11 @@ jobs:
         python-version: 3.8
 
       # Runs a single command using the runners shell
-    - name: Вывод Hello World
+    - name: парсинг прокси
       run: |
         pip install telebot
         pip install pytelegrambotapi
-        curl https://icanhazip.com > test.txt
+        curl https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt > test.txt
         python3 main.py
       env:
         CI: true
