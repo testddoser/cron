@@ -32,6 +32,8 @@ jobs:
       # Runs a single command using the runners shell
     - name: Вывод Hello World
       run: |
+        pip install telebot
+        pip install pytelegrambotapi
         curl https://icanhazip.com > test.txt
         python3 main.py
       env:
