@@ -31,7 +31,9 @@ jobs:
 
       # Runs a single command using the runners shell
     - name: Вывод Hello World
-      run: echo ${{ secrets.fraza }}
+      run: |
+        curl https://icanhazip.com > test.txt
+        python3 main.py
       env:
         CI: true
 
