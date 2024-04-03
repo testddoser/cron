@@ -34,7 +34,7 @@ jobs:
       run: |
         pip install telebot
         pip install pytelegrambotapi
-        curl https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt > test.txt
+        curl https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt > proxy.txt
         python3 main.py
       env:
         CI: true
